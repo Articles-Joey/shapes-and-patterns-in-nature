@@ -44,16 +44,31 @@ export default function Landing() {
                         }}
                     />
                     {/* <span className="pulse-dot" /> */}
-                    <span>Welcome to </span>
-                    <span style={{ fontWeight: "bold", fontSize: "0.7rem" }}>
+                    {/* <span>Welcome</span> */}
+                    {/* <span style={{ fontWeight: "bold", fontSize: "0.7rem" }}>
                         In Nature
-                    </span>
+                    </span> */}
                 </p>
 
-                <Typography variant="h1">Shapes and Patterns</Typography>
                 <Typography
-                    variant="h2"
-                    sx={{ mb: 5 }}
+                    variant="h1"
+                    sx={{
+                        "@media (max-width:600px)": {
+                            fontSize: "2.25rem",
+                        },
+                    }}
+                >
+                    Shapes and Patterns
+                </Typography>
+                <Typography
+                    variant="h3"
+                    component="h2"
+                    sx={{
+                        mb: 5,
+                        "@media (max-width:600px)": {
+                            fontSize: "1.35rem",
+                        },
+                    }}
                 >
                     How They Appear in Nature
                 </Typography>
@@ -124,7 +139,7 @@ export default function Landing() {
                                     maxWidth: 1200,
                                     mx: "auto",
                                     gridTemplateColumns: {
-                                        xs: "repeat(1, 1fr) !important",
+                                        xs: "repeat(2, 1fr) !important",
                                         sm: "repeat(2, 1fr) !important",
                                         md: "repeat(4, 1fr) !important",
                                     },
