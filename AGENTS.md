@@ -7,3 +7,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+<!-- BEGIN MUI - Building UI Elements Guide -->
+
+When building UI elements assume I want MUI 9 components with inline styles via the SX prop, as oppose to doing normal html with css files. Do not run PNPM build commands unless I ask.
+
+<!-- END MUI - Building UI Elements Guide -->

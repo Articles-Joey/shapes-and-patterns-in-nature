@@ -105,7 +105,10 @@ export default function Sidebar({
                         sx={{
                             display: "flex",
                             flex: "none",
-                            flexDirection: { xs: "column-reverse", md: "column" },
+                            flexDirection: {
+                                xs: "column-reverse",
+                                md: "column",
+                            },
                         }}
                     >
                         <Box
@@ -141,7 +144,10 @@ export default function Sidebar({
                             component="ul"
                             sx={{
                                 display: "flex",
-                                flexDirection: { xs: "column-reverse", md: "column" },
+                                flexDirection: {
+                                    xs: "column-reverse",
+                                    md: "column",
+                                },
                                 m: 0,
                                 p: 0,
                                 listStyle: "none",
@@ -197,13 +203,16 @@ export default function Sidebar({
                                             }}
                                         >
                                             <ButtonBase
-                                                onClick={() => onSelect(item.id)}
+                                                onClick={() =>
+                                                    onSelect(item.id)
+                                                }
                                                 aria-current={
                                                     active ? "page" : undefined
                                                 }
                                                 sx={{
                                                     display: "flex",
-                                                    justifyContent: "flex-start",
+                                                    justifyContent:
+                                                        "flex-start",
                                                     width: "100%",
                                                     height: 42,
                                                     borderLeft: "3px solid",
@@ -216,7 +225,9 @@ export default function Sidebar({
                                                     color: active
                                                         ? colors.paper
                                                         : "inherit",
-                                                    fontWeight: active ? 600 : 400,
+                                                    fontWeight: active
+                                                        ? 600
+                                                        : 400,
                                                     textAlign: "left",
                                                     whiteSpace: "nowrap",
                                                     "&:hover": {
@@ -232,7 +243,8 @@ export default function Sidebar({
                                                         display: "flex",
                                                         flex: "none",
                                                         alignItems: "center",
-                                                        justifyContent: "center",
+                                                        justifyContent:
+                                                            "center",
                                                         // 50px minus the 3px active border
                                                         width: COLLAPSED - 3,
                                                     }}
@@ -244,8 +256,11 @@ export default function Sidebar({
                                                     sx={{
                                                         overflow: "hidden",
                                                         pr: 2,
-                                                        textOverflow: "ellipsis",
-                                                        opacity: expanded ? 1 : 0,
+                                                        textOverflow:
+                                                            "ellipsis",
+                                                        opacity: expanded
+                                                            ? 1
+                                                            : 0,
                                                         transition:
                                                             "opacity 0.15s ease",
                                                     }}

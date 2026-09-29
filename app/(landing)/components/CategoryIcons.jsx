@@ -24,19 +24,35 @@ function Svg({ size = 24, children, ...rest }) {
 
 export const CubeIcon = (p) => (
     <Svg {...p}>
-        <rect x="4" y="4" width="16" height="16" rx="2" fill="currentColor" />
+        <rect
+            x="4"
+            y="4"
+            width="16"
+            height="16"
+            rx="2"
+            fill="currentColor"
+        />
     </Svg>
 );
 
 export const SphereIcon = (p) => (
     <Svg {...p}>
-        <circle cx="12" cy="12" r="9" fill="currentColor" />
+        <circle
+            cx="12"
+            cy="12"
+            r="9"
+            fill="currentColor"
+        />
     </Svg>
 );
 
 export const ConeIcon = (p) => (
     <Svg {...p}>
-        <path d="M12 3 22 20H2Z" fill="currentColor" strokeLinejoin="round" />
+        <path
+            d="M12 3 22 20H2Z"
+            fill="currentColor"
+            strokeLinejoin="round"
+        />
     </Svg>
 );
 
@@ -46,13 +62,23 @@ export const CylinderIcon = (p) => (
             d="M4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6c0 1.66-3.58 3-8 3S4 7.66 4 6Z"
             fill="currentColor"
         />
-        <ellipse cx="12" cy="6" rx="8" ry="3" fill="currentColor" opacity="0.55" />
+        <ellipse
+            cx="12"
+            cy="6"
+            rx="8"
+            ry="3"
+            fill="currentColor"
+            opacity="0.55"
+        />
     </Svg>
 );
 
 export const HexagonIcon = (p) => (
     <Svg {...p}>
-        <path d="M12 2 20.5 7v10L12 22 3.5 17V7Z" fill="currentColor" />
+        <path
+            d="M12 2 20.5 7v10L12 22 3.5 17V7Z"
+            fill="currentColor"
+        />
     </Svg>
 );
 
@@ -91,10 +117,36 @@ export const SpiralIcon = (p) => (
 export const TessellationIcon = (p) => (
     <Svg {...p}>
         <g fill="currentColor">
-            <rect x="3" y="3" width="8" height="8" rx="1" />
-            <rect x="13" y="3" width="8" height="8" rx="1" opacity="0.55" />
-            <rect x="3" y="13" width="8" height="8" rx="1" opacity="0.55" />
-            <rect x="13" y="13" width="8" height="8" rx="1" />
+            <rect
+                x="3"
+                y="3"
+                width="8"
+                height="8"
+                rx="1"
+            />
+            <rect
+                x="13"
+                y="3"
+                width="8"
+                height="8"
+                rx="1"
+                opacity="0.55"
+            />
+            <rect
+                x="3"
+                y="13"
+                width="8"
+                height="8"
+                rx="1"
+                opacity="0.55"
+            />
+            <rect
+                x="13"
+                y="13"
+                width="8"
+                height="8"
+                rx="1"
+            />
         </g>
     </Svg>
 );
@@ -102,9 +154,27 @@ export const TessellationIcon = (p) => (
 export const StripeIcon = (p) => (
     <Svg {...p}>
         <g fill="currentColor">
-            <rect x="3" y="4" width="18" height="3.5" rx="1" />
-            <rect x="3" y="10.25" width="18" height="3.5" rx="1" />
-            <rect x="3" y="16.5" width="18" height="3.5" rx="1" />
+            <rect
+                x="3"
+                y="4"
+                width="18"
+                height="3.5"
+                rx="1"
+            />
+            <rect
+                x="3"
+                y="10.25"
+                width="18"
+                height="3.5"
+                rx="1"
+            />
+            <rect
+                x="3"
+                y="16.5"
+                width="18"
+                height="3.5"
+                rx="1"
+            />
         </g>
     </Svg>
 );
@@ -121,10 +191,26 @@ export const WaveIcon = (p) => (
 export const SpotIcon = (p) => (
     <Svg {...p}>
         <g fill="currentColor">
-            <circle cx="7" cy="7" r="3.5" />
-            <circle cx="17" cy="8" r="2.5" />
-            <circle cx="9" cy="17" r="2.5" />
-            <circle cx="17.5" cy="16.5" r="3.5" />
+            <circle
+                cx="7"
+                cy="7"
+                r="3.5"
+            />
+            <circle
+                cx="17"
+                cy="8"
+                r="2.5"
+            />
+            <circle
+                cx="9"
+                cy="17"
+                r="2.5"
+            />
+            <circle
+                cx="17.5"
+                cy="16.5"
+                r="3.5"
+            />
         </g>
     </Svg>
 );

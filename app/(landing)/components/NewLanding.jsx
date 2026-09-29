@@ -17,16 +17,19 @@ import { categoryIcons } from "./CategoryIcons";
 import { colors, inkAlpha } from "./tokens";
 import logo from "@/app/icon.png";
 
-const toSrc = (path) => (/^(https?:)?\/\//.test(path) ? path : `/${path.replace(/^\//, "")}`);
+const toSrc = (path) =>
+    /^(https?:)?\/\//.test(path) ? path : `/${path.replace(/^\//, "")}`;
 
 // Supports `images: [...]` (strings or { src, alt }) and falls back to the single `img`.
 function getImages(item) {
     const raw = item.images?.length ? item.images : [item.img];
-    return raw.filter(Boolean).map((image) =>
-        typeof image === "string"
-            ? { src: toSrc(image), alt: item.name }
-            : { src: toSrc(image.src), alt: image.alt || item.name },
-    );
+    return raw
+        .filter(Boolean)
+        .map((image) =>
+            typeof image === "string"
+                ? { src: toSrc(image), alt: item.name }
+                : { src: toSrc(image.src), alt: image.alt || item.name },
+        );
 }
 
 const isHttp = (url) => /^https?:\/\//.test(url || "");
@@ -213,9 +216,9 @@ export default function NewLanding() {
                                 opacity: 0.8,
                             }}
                         >
-                            Explore the natural occurrence and beauty of
-                            shapes and patterns, and how they appear
-                            throughout the universe.
+                            Explore the natural occurrence and beauty of shapes
+                            and patterns, and how they appear throughout the
+                            universe.
                         </Typography>
                     </Box>
 
@@ -304,13 +307,15 @@ export default function NewLanding() {
                                                     <Box
                                                         component="span"
                                                         sx={{
-                                                            position: "absolute",
+                                                            position:
+                                                                "absolute",
                                                             right: 6,
                                                             bottom: 6,
                                                             px: 1,
                                                             py: "2px",
                                                             borderRadius: 999,
-                                                            bgcolor: inkAlpha(0.8),
+                                                            bgcolor:
+                                                                inkAlpha(0.8),
                                                             color: "#fff",
                                                             fontSize: "0.7rem",
                                                         }}
