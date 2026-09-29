@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none" stroke="#4f7f3f" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Each line starts and ends at the same x with a vertical tangent, so the tile repeats seamlessly. -->
+  <path d="M60 0C60 50 110 50 110 100C110 150 40 150 40 200C40 250 100 250 100 300C100 350 60 350 60 400"/>
+  <path d="M170 0C170 65 235 65 235 130C235 200 150 200 150 270C150 300 200 300 200 330C200 365 170 365 170 400"/>
+  <path d="M300 0C300 45 340 45 340 90C340 145 270 145 270 200C270 255 345 255 345 310C345 355 300 355 300 400"/>
+</svg>

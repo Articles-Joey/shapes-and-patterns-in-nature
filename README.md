@@ -1,5 +1,7 @@
 # Shapes and Patterns in Nature
 
+![Site Preview](/public/img/preview.webp)
+
 An art project built with Next.js. View shapes and patterns in groups as they appear naturally. For example squares, results for this would include Pyrite (Fool's Gold) or Wombat poop! Visit the site to learn more.
 
 [https://shapes-and-patterns-in-nature.articles.media](https://shapes-and-patterns-in-nature.articles.media)

@@ -32,7 +32,7 @@ a {
 }
 
 .landing-page {
-    overflow: hidden;
+    overflow: clip; /* unlike hidden, keeps position: sticky working */
     background: #080a0d;
 }
 
